@@ -118,11 +118,22 @@ int main(int argc, char **argv) {
 	//register work thread
 	t_thread_arg sig_arg;
 	memset(&sig_arg, 0, sizeof(sig_arg));
-	snprintf(sig_arg.name, sizeof(sig_arg.name), "./https/sig.so");
+	snprintf(sig_arg.name, sizeof(sig_arg.name), "./sig.so");
 	sig_arg.port = 49812;	//if this port gt 0, thread will listen this port, use for server side	
 	sig_arg.maxevent = myconfig_get_intval("log_sig_maxevent", 4096);
+	sig_arg.protocol = SOCK_DGRAM;
 	LOG(glogfd, LOG_NORMAL, "prepare start %s\n", sig_arg.name);
 	if(init_work_thread(&sig_arg))
+		goto error;	
+
+	t_thread_arg data_arg;
+	memset(&data_arg, 0, sizeof(data_arg));
+	snprintf(data_arg.name, sizeof(data_arg.name), "./data.so");
+	data_arg.port = 49812;	//if this port gt 0, thread will listen this port, use for server side	
+	data_arg.maxevent = myconfig_get_intval("log_sig_maxevent", 4096);
+	data_arg.protocol = SOCK_STREAM;
+	LOG(glogfd, LOG_NORMAL, "prepare start %s\n", data_arg.name);
+	if(init_work_thread(&data_arg))
 		goto error;	
 
     /*set thread title*/

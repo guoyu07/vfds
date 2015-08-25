@@ -4,6 +4,10 @@
 #include <sys/poll.h>
 #include "atomic.h"
 #include <stdint.h>
+#include <sys/socket.h>
+#include <sys/wait.h>
+#include <unistd.h>
+#include <arpa/inet.h>
 #include <openssl/ssl.h>
 #include <openssl/err.h>
 #include "list.h"

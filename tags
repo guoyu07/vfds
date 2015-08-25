@@ -1,0 +1,740 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AGENT_CT_RES	lib/protocol.h	31;"	d
+AGENT_DL_REQ	lib/protocol.h	47;"	d
+AGENT_HB_REQ	lib/protocol.h	25;"	d
+AGENT_IN_REQ	lib/protocol.h	22;"	d
+AGENT_LOG_POST	lib/protocol.h	50;"	d
+AGENT_NT_RES	lib/protocol.h	28;"	d
+ALLMASK	echo/sig.h	16;"	d
+ALLMASK	https/sig.h	16;"	d
+ATOMIC_INIT	src/atomic.h	24;"	d
+A_CT_2_M	lib/protocol.h	39;"	d
+A_DL_2_M	lib/protocol.h	53;"	d
+A_HB_2_M	lib/protocol.h	37;"	d
+A_LOG_2_M	lib/protocol.h	56;"	d
+A_L_2_M	lib/protocol.h	36;"	d
+A_NT_2_M	lib/protocol.h	38;"	d
+AddAttachment	lib/CSmtp.cpp	/^void CSmtp::AddAttachment(const char *Path)$/;"	f	class:CSmtp
+AddBCCRecipient	lib/CSmtp.cpp	/^void CSmtp::AddBCCRecipient(const char *email, const char *name)$/;"	f	class:CSmtp
+AddCCRecipient	lib/CSmtp.cpp	/^void CSmtp::AddCCRecipient(const char *email, const char *name)$/;"	f	class:CSmtp
+AddMsgLine	lib/CSmtp.cpp	/^void CSmtp::AddMsgLine(const char* Text)$/;"	f	class:CSmtp
+AddRecipient	lib/CSmtp.cpp	/^void CSmtp::AddRecipient(const char *email, const char *name)$/;"	f	class:CSmtp
+Attachments	lib/CSmtp.h	/^	std::vector<std::string> Attachments;$/;"	m	class:CSmtp
+BAD_IPV4_ADDR	lib/CSmtp.h	/^		BAD_IPV4_ADDR,$/;"	e	enum:ECSmtp::CSmtpError
+BAD_LOGIN_PASS	lib/CSmtp.h	/^		BAD_LOGIN_PASS,$/;"	e	enum:ECSmtp::CSmtpError
+BCCRecipients	lib/CSmtp.h	/^	std::vector<Recipient> BCCRecipients;$/;"	m	class:CSmtp
+BOUNDARY_TEXT	lib/CSmtp.h	/^const char BOUNDARY_TEXT[] = "__MESSAGE__ID__54yg6f6h6y456345";$/;"	v
+BUFFER_SIZE	lib/CSmtp.h	43;"	d
+BUF_LEN	lib/util_http.c	21;"	d	file:
+CANCEL_TASK	src/task.h	/^enum {TASK_HOME = 0, COLLECT_TASK, CANCEL_TASK, TASK_UNKNOWN};$/;"	e	enum:__anon8
+CC	echo/makefile	/^CC=gcc$/;"	m
+CC	https/makefile	/^CC=gcc$/;"	m
+CC	lib/makefile	/^CC:=$(shell sh -c 'type $(CC) >\/dev\/null 2>\/dev\/null && echo $(CC) || echo gcc')$/;"	m
+CC	src/makefile	/^CC=gcc$/;"	m
+CC	ssl_client/makefile	/^CC=gcc$/;"	m
+CCRecipients	lib/CSmtp.h	/^	std::vector<Recipient> CCRecipients;$/;"	m	class:CSmtp
+COLLECT_TASK	src/task.h	/^enum {TASK_HOME = 0, COLLECT_TASK, CANCEL_TASK, TASK_UNKNOWN};$/;"	e	enum:__anon8
+COMMAND_AUTH_LOGIN	lib/CSmtp.h	/^		COMMAND_AUTH_LOGIN,$/;"	e	enum:ECSmtp::CSmtpError
+COMMAND_DATA	lib/CSmtp.h	/^		COMMAND_DATA,$/;"	e	enum:ECSmtp::CSmtpError
+COMMAND_EHLO	lib/CSmtp.h	/^		COMMAND_EHLO,$/;"	e	enum:ECSmtp::CSmtpError
+COMMAND_MAIL_FROM	lib/CSmtp.h	/^		COMMAND_MAIL_FROM = 300,$/;"	e	enum:ECSmtp::CSmtpError
+COMMAND_QUIT	lib/CSmtp.h	/^		COMMAND_QUIT,$/;"	e	enum:ECSmtp::CSmtpError
+COMMAND_RCPT_TO	lib/CSmtp.h	/^		COMMAND_RCPT_TO,$/;"	e	enum:ECSmtp::CSmtpError
+CONNECTED	echo/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
+CONNECTED	https/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
+CONNECTION_CLOSED	lib/CSmtp.h	/^		CONNECTION_CLOSED = 400, \/\/ by server$/;"	e	enum:ECSmtp::CSmtpError
+CON_ACTIVE	src/global.h	/^enum MODE {CON_PASSIVE = 0, CON_ACTIVE};$/;"	e	enum:MODE
+CON_PASSIVE	src/global.h	/^enum MODE {CON_PASSIVE = 0, CON_ACTIVE};$/;"	e	enum:MODE
+COUNTER_VALUE	lib/CSmtp.h	45;"	d
+CSMTP_NO_ERROR	lib/CSmtp.h	/^		CSMTP_NO_ERROR = 0,$/;"	e	enum:ECSmtp::CSmtpError
+CSmptXPriority	lib/CSmtp.h	/^enum CSmptXPriority$/;"	g
+CSmtp	lib/CSmtp.cpp	/^CSmtp::CSmtp()$/;"	f	class:CSmtp
+CSmtp	lib/CSmtp.h	/^class CSmtp  $/;"	c
+CSmtpError	lib/CSmtp.h	/^	enum CSmtpError$/;"	g	class:ECSmtp
+CXX	echo/makefile	/^CXX=g++$/;"	m
+CXX	https/makefile	/^CXX=g++$/;"	m
+CXX	lib/makefile	/^CXX=g++$/;"	m
+CXX	src/makefile	/^CXX=g++$/;"	m
+CXX	ssl_client/makefile	/^CXX=g++$/;"	m
+CloseHandle	lib/CSmtp.cpp	/^void CSmtp::CloseHandle()$/;"	f	class:CSmtp
+ConnectRemoteServer	lib/CSmtp.cpp	/^SOCKET CSmtp::ConnectRemoteServer(const char *szServer,const unsigned short nPort_)$/;"	f	class:CSmtp
+DEFAULT_MAX_LOG_NUM	lib/log.c	7;"	d	file:
+DELAYCLOSE	lib/log.c	11;"	d	file:
+DelAttachments	lib/CSmtp.cpp	/^void CSmtp::DelAttachments()$/;"	f	class:CSmtp
+DelBCCRecipients	lib/CSmtp.cpp	/^void CSmtp::DelBCCRecipients()$/;"	f	class:CSmtp
+DelCCRecipients	lib/CSmtp.cpp	/^void CSmtp::DelCCRecipients()$/;"	f	class:CSmtp
+DelMsgLine	lib/CSmtp.cpp	/^void CSmtp::DelMsgLine(unsigned int Line)$/;"	f	class:CSmtp
+DelMsgLines	lib/CSmtp.cpp	/^void CSmtp::DelMsgLines()$/;"	f	class:CSmtp
+DelRecipients	lib/CSmtp.cpp	/^void CSmtp::DelRecipients()$/;"	f	class:CSmtp
+ECSmtp	lib/CSmtp.h	/^	ECSmtp(CSmtpError err_) : ErrorCode(err_) {}$/;"	f	class:ECSmtp
+ECSmtp	lib/CSmtp.h	/^class ECSmtp$/;"	c
+EXCPT_STATUS	lib/util_http.c	27;"	d	file:
+E_DATA_LEN	lib/protocol.h	/^enum {E_PACKET_ERR_CLOSE = -100, E_PRO_OK = 0, E_PRO_HEAD_LEN, E_PRO_TOTAL_LEN, E_DATA_LEN};$/;"	e	enum:__anon12
+E_PACKET_ERR_CLOSE	lib/protocol.h	/^enum {E_PACKET_ERR_CLOSE = -100, E_PRO_OK = 0, E_PRO_HEAD_LEN, E_PRO_TOTAL_LEN, E_DATA_LEN};$/;"	e	enum:__anon12
+E_PRO_HEAD_LEN	lib/protocol.h	/^enum {E_PACKET_ERR_CLOSE = -100, E_PRO_OK = 0, E_PRO_HEAD_LEN, E_PRO_TOTAL_LEN, E_DATA_LEN};$/;"	e	enum:__anon12
+E_PRO_OK	lib/protocol.h	/^enum {E_PACKET_ERR_CLOSE = -100, E_PRO_OK = 0, E_PRO_HEAD_LEN, E_PRO_TOTAL_LEN, E_DATA_LEN};$/;"	e	enum:__anon12
+E_PRO_TOTAL_LEN	lib/protocol.h	/^enum {E_PACKET_ERR_CLOSE = -100, E_PRO_OK = 0, E_PRO_HEAD_LEN, E_PRO_TOTAL_LEN, E_DATA_LEN};$/;"	e	enum:__anon12
+ErrorCode	lib/CSmtp.h	/^	CSmtpError ErrorCode;$/;"	m	class:ECSmtp
+F1	lib/md5.c	153;"	d	file:
+F2	lib/md5.c	154;"	d	file:
+F3	lib/md5.c	155;"	d	file:
+F4	lib/md5.c	156;"	d	file:
+FILE_NOT_EXIST	lib/CSmtp.h	/^		FILE_NOT_EXIST,$/;"	e	enum:ECSmtp::CSmtpError
+FUNC	lib/common.h	19;"	d
+FUNC	src/global.h	16;"	d
+FormatHeader	lib/CSmtp.cpp	/^void CSmtp::FormatHeader(char* header)$/;"	f	class:CSmtp
+GETLOGLEVEL	lib/log.c	39;"	d	file:
+GET_TASK_ERR	src/task.h	/^enum {GET_TASK_ERR = -1, GET_TASK_OK, GET_TASK_NOTHING};$/;"	e	enum:__anon9
+GET_TASK_NOTHING	src/task.h	/^enum {GET_TASK_ERR = -1, GET_TASK_OK, GET_TASK_NOTHING};$/;"	e	enum:__anon9
+GET_TASK_OK	src/task.h	/^enum {GET_TASK_ERR = -1, GET_TASK_OK, GET_TASK_NOTHING};$/;"	e	enum:__anon9
+GSIZE	src/so.h	7;"	d
+GetBCCRecipientCount	lib/CSmtp.cpp	/^unsigned int CSmtp::GetBCCRecipientCount() const$/;"	f	class:CSmtp
+GetCCRecipientCount	lib/CSmtp.cpp	/^unsigned int CSmtp::GetCCRecipientCount() const$/;"	f	class:CSmtp
+GetErrorNum	lib/CSmtp.h	/^	CSmtpError GetErrorNum(void) const {return ErrorCode;}$/;"	f	class:ECSmtp
+GetErrorText	lib/CSmtp.cpp	/^std::string ECSmtp::GetErrorText() const$/;"	f	class:ECSmtp
+GetLocalHostName	lib/CSmtp.cpp	/^const char* CSmtp::GetLocalHostName() const$/;"	f	class:CSmtp
+GetMailFrom	lib/CSmtp.cpp	/^const char* CSmtp::GetMailFrom() const$/;"	f	class:CSmtp
+GetMsgLineText	lib/CSmtp.cpp	/^const char* CSmtp::GetMsgLineText(unsigned int Line) const$/;"	f	class:CSmtp
+GetMsgLines	lib/CSmtp.cpp	/^unsigned int CSmtp::GetMsgLines() const$/;"	f	class:CSmtp
+GetRecipientCount	lib/CSmtp.cpp	/^unsigned int CSmtp::GetRecipientCount() const$/;"	f	class:CSmtp
+GetReplyTo	lib/CSmtp.cpp	/^const char* CSmtp::GetReplyTo() const$/;"	f	class:CSmtp
+GetSenderName	lib/CSmtp.cpp	/^const char* CSmtp::GetSenderName() const$/;"	f	class:CSmtp
+GetSubject	lib/CSmtp.cpp	/^const char* CSmtp::GetSubject() const$/;"	f	class:CSmtp
+GetXMailer	lib/CSmtp.cpp	/^const char* CSmtp::GetXMailer() const$/;"	f	class:CSmtp
+GetXPriority	lib/CSmtp.cpp	/^CSmptXPriority CSmtp::GetXPriority() const$/;"	f	class:CSmtp
+HB_RSP	echo/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
+HB_RSP	https/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
+HB_SEND	echo/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
+HB_SEND	https/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
+ICALL	src/main.c	86;"	d	file:
+ID	lib/common.h	18;"	d
+ID	src/global.h	14;"	d
+IDLE	echo/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
+IDLE	https/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
+INIT_LIST_HEAD	lib/list.h	24;"	d
+INVALID_SOCKET	lib/CSmtp.h	27;"	d
+LACK_OF_MEMORY	lib/CSmtp.h	/^		LACK_OF_MEMORY,$/;"	e	enum:ECSmtp::CSmtpError
+LIBNAME	lib/makefile	/^LIBNAME=libtools$/;"	m
+LIST_HEAD	lib/list.h	21;"	d
+LIST_HEAD_INIT	lib/list.h	19;"	d
+LN	lib/common.h	20;"	d
+LN	src/global.h	15;"	d
+LOCK	src/atomic.h	12;"	d
+LOCK	src/atomic.h	14;"	d
+LOG	lib/log.c	/^void LOG(int fd, int level, const char* fmt, ...) $/;"	f
+LOGIN	echo/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
+LOGIN	https/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
+LOGOUT	echo/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
+LOGOUT	https/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
+LOG_DEBUG	lib/log.h	/^enum loglevel {LOG_TRACE = 0, LOG_DEBUG, LOG_NORMAL, LOG_ERROR, LOG_FAULT, LOG_NONE}; $/;"	e	enum:loglevel
+LOG_DEBUG	src/daemon.c	15;"	d	file:
+LOG_ERROR	lib/log.h	/^enum loglevel {LOG_TRACE = 0, LOG_DEBUG, LOG_NORMAL, LOG_ERROR, LOG_FAULT, LOG_NONE}; $/;"	e	enum:loglevel
+LOG_FAULT	lib/log.h	/^enum loglevel {LOG_TRACE = 0, LOG_DEBUG, LOG_NORMAL, LOG_ERROR, LOG_FAULT, LOG_NONE}; $/;"	e	enum:loglevel
+LOG_NONE	lib/log.h	/^enum loglevel {LOG_TRACE = 0, LOG_DEBUG, LOG_NORMAL, LOG_ERROR, LOG_FAULT, LOG_NONE}; $/;"	e	enum:loglevel
+LOG_NORMAL	lib/log.h	/^enum loglevel {LOG_TRACE = 0, LOG_DEBUG, LOG_NORMAL, LOG_ERROR, LOG_FAULT, LOG_NONE}; $/;"	e	enum:loglevel
+LOG_TRACE	lib/log.h	/^enum loglevel {LOG_TRACE = 0, LOG_DEBUG, LOG_NORMAL, LOG_ERROR, LOG_FAULT, LOG_NONE}; $/;"	e	enum:loglevel
+LPHOSTENT	lib/CSmtp.h	/^	typedef struct hostent* LPHOSTENT;$/;"	t	typeref:struct:hostent
+LPIN_ADDR	lib/CSmtp.h	/^	typedef struct in_addr* LPIN_ADDR;$/;"	t	typeref:struct:in_addr
+LPSERVENT	lib/CSmtp.h	/^	typedef struct servent* LPSERVENT;$/;"	t	typeref:struct:servent
+LPSOCKADDR	lib/CSmtp.h	/^	typedef struct sockaddr* LPSOCKADDR;$/;"	t	typeref:struct:sockaddr
+MASTER_CT_REQ	lib/protocol.h	32;"	d
+MASTER_DL_RES	lib/protocol.h	48;"	d
+MASTER_HB_RES	lib/protocol.h	26;"	d
+MASTER_IN_RES	lib/protocol.h	23;"	d
+MASTER_NT_REQ	lib/protocol.h	29;"	d
+MAXBUF	src/epoll_udp.c	21;"	d	file:
+MAXEPOLLSIZE	src/epoll_udp.c	22;"	d	file:
+MAX_LOG	lib/log.c	5;"	d	file:
+MAX_LOG_LEN	lib/log.c	6;"	d	file:
+MAX_RELOAD_KEY_NUM	lib/myconfig.c	40;"	d	file:
+MAX_SIG_BODY	lib/protocol.h	6;"	d
+MAX_STRING_LEN	lib/util_http.c	22;"	d	file:
+MD5Context	lib/md5.h	/^struct MD5Context {$/;"	s
+MD5Digest	lib/md5.c	/^void MD5Digest( const unsigned char *msg, int len, unsigned char *digest) {$/;"	f
+MD5Final	lib/md5.c	/^void MD5Final(unsigned char digest[16], struct MD5Context *ctx)$/;"	f
+MD5HMAC	lib/md5.c	/^void MD5HMAC (const unsigned char *password,  unsigned pass_len,$/;"	f
+MD5HMAC2	lib/md5.c	/^void MD5HMAC2 (const unsigned char *password,  unsigned pass_len,$/;"	f
+MD5Init	lib/md5.c	/^void MD5Init(struct MD5Context *ctx)$/;"	f
+MD5STEP	lib/md5.c	159;"	d	file:
+MD5Transform	lib/md5.c	/^static void MD5Transform(uint32_t buf[4], uint32_t const in[16])$/;"	f	file:
+MD5Update	lib/md5.c	/^void MD5Update(struct MD5Context *ctx, unsigned char const *buf, unsigned len)$/;"	f
+MODE	src/global.h	/^enum MODE {CON_PASSIVE = 0, CON_ACTIVE};$/;"	g
+MSG_BODY_ERROR	lib/CSmtp.h	/^		MSG_BODY_ERROR,$/;"	e	enum:ECSmtp::CSmtpError
+MSG_SIZE_IN_MB	lib/CSmtp.h	44;"	d
+MSG_TOO_BIG	lib/CSmtp.h	/^		MSG_TOO_BIG,$/;"	e	enum:ECSmtp::CSmtpError
+M_CT_2_A	lib/protocol.h	44;"	d
+M_DL_2_A	lib/protocol.h	54;"	d
+M_HB_2_A	lib/protocol.h	42;"	d
+M_L_2_A	lib/protocol.h	41;"	d
+M_NT_2_A	lib/protocol.h	43;"	d
+Mail	lib/CSmtp.h	/^		std::string Mail;$/;"	m	struct:CSmtp::Recipient
+ModMsgLine	lib/CSmtp.cpp	/^void CSmtp::ModMsgLine(unsigned int Line,const char* Text)$/;"	f	class:CSmtp
+MsgBody	lib/CSmtp.h	/^	std::vector<std::string> MsgBody;$/;"	m	class:CSmtp
+NOWTIME	lib/log.c	10;"	d	file:
+NS	src/makefile	/^NS=test_master$/;"	m
+Name	lib/CSmtp.h	/^		std::string Name;$/;"	m	struct:CSmtp::Recipient
+OBJ	echo/makefile	/^OBJ=sig.o$/;"	m
+OBJ	https/makefile	/^OBJ=sig.o$/;"	m
+OBJ	lib/makefile	/^OBJ=log.o  util_ip.o myconfig.o util_hex.o util_misc.o util_str.o util_http.o common.o myepoll.o protocol.o base64.o CSmtp.o c_mail.o$/;"	m
+OBJ	src/makefile	/^OBJ= main.o	\\$/;"	m
+OBJ	ssl_client/makefile	/^OBJ=ssl_client.o$/;"	m
+ON_LINE	src/global.h	/^enum SERVER_STAT {UNKOWN_STAT = 0, WAIT_SYNC, SYNCING, SYNCED, ON_LINE};$/;"	e	enum:SERVER_STAT
+OUT_OF_MSG_RANGE	lib/CSmtp.h	/^		OUT_OF_MSG_RANGE$/;"	e	enum:ECSmtp::CSmtpError
+PR_SET_NAME	lib/log.c	236;"	d	file:
+READ_STATUS	lib/util_http.c	25;"	d	file:
+RECVBUF_IS_EMPTY	lib/CSmtp.h	/^		RECVBUF_IS_EMPTY,$/;"	e	enum:ECSmtp::CSmtpError
+RECV_ADD_EPOLLALL	src/global.h	40;"	d
+RECV_ADD_EPOLLIN	src/global.h	38;"	d
+RECV_ADD_EPOLLOUT	src/global.h	39;"	d
+RECV_CLOSE	src/global.h	37;"	d
+RECV_LAST	echo/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
+RECV_LAST	https/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
+RECV_SEND	src/global.h	41;"	d
+RET_CLOSE_DUP	src/global.h	52;"	d
+RET_CLOSE_HB	src/global.h	50;"	d
+RET_CLOSE_MALLOC	src/global.h	51;"	d
+RET_OK	src/global.h	48;"	d
+RET_SUCCESS	src/global.h	49;"	d
+ReceiveData	lib/CSmtp.cpp	/^void CSmtp::ReceiveData()$/;"	f	class:CSmtp
+Recipient	lib/CSmtp.h	/^	struct Recipient$/;"	s	class:CSmtp
+Recipients	lib/CSmtp.h	/^	std::vector<Recipient> Recipients;$/;"	m	class:CSmtp
+RecvBuf	lib/CSmtp.h	/^	char *RecvBuf;$/;"	m	class:CSmtp
+SELECT_TIMEOUT	lib/CSmtp.h	/^		SELECT_TIMEOUT,$/;"	e	enum:ECSmtp::CSmtpError
+SENDBUFSIZE	https/sig.c	27;"	d	file:
+SENDBUF_IS_EMPTY	lib/CSmtp.h	/^		SENDBUF_IS_EMPTY,$/;"	e	enum:ECSmtp::CSmtpError
+SEND_ADD_EPOLLALL	src/global.h	46;"	d
+SEND_ADD_EPOLLIN	src/global.h	44;"	d
+SEND_ADD_EPOLLOUT	src/global.h	45;"	d
+SEND_CLOSE	src/global.h	43;"	d
+SEND_LAST	echo/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
+SEND_LAST	https/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
+SEP	lib/myconfig.c	37;"	d	file:
+SERVER_NOT_READY	lib/CSmtp.h	/^		SERVER_NOT_READY, \/\/ remote server$/;"	e	enum:ECSmtp::CSmtpError
+SERVER_NOT_RESPONDING	lib/CSmtp.h	/^		SERVER_NOT_RESPONDING,$/;"	e	enum:ECSmtp::CSmtpError
+SERVER_STAT	src/global.h	/^enum SERVER_STAT {UNKOWN_STAT = 0, WAIT_SYNC, SYNCING, SYNCED, ON_LINE};$/;"	g
+SIG_HEADSIZE	lib/protocol.h	5;"	d
+SOCKADDR_IN	lib/CSmtp.h	/^	typedef struct sockaddr_in SOCKADDR_IN;$/;"	t	typeref:struct:sockaddr_in
+SOCKET	lib/CSmtp.h	/^	typedef int SOCKET;$/;"	t
+SOCKET_ERROR	lib/CSmtp.h	26;"	d
+SOCK_STAT	echo/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	g
+SOCK_STAT	https/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	g
+SSL_ACCEPT	src/global.h	/^enum SSL_OPER {SSL_ACCEPT = 1, SSL_READ, SSL_WRITE};$/;"	e	enum:SSL_OPER
+SSL_OPER	src/global.h	/^enum SSL_OPER {SSL_ACCEPT = 1, SSL_READ, SSL_WRITE};$/;"	g
+SSL_READ	src/global.h	/^enum SSL_OPER {SSL_ACCEPT = 1, SSL_READ, SSL_WRITE};$/;"	e	enum:SSL_OPER
+SSL_WRITE	src/global.h	/^enum SSL_OPER {SSL_ACCEPT = 1, SSL_READ, SSL_WRITE};$/;"	e	enum:SSL_OPER
+STLIBNAME	lib/makefile	/^STLIBNAME=$(LIBNAME).$(STLIBSUFFIX)$/;"	m
+STLIBSUFFIX	lib/makefile	/^STLIBSUFFIX=a$/;"	m
+STLIB_MAKE_CMD	lib/makefile	/^STLIB_MAKE_CMD=ar rcs $(STLIBNAME)$/;"	m
+SUBDIRS	makefile	/^SUBDIRS = lib src$/;"	m
+SYNCED	src/global.h	/^enum SERVER_STAT {UNKOWN_STAT = 0, WAIT_SYNC, SYNCING, SYNCED, ON_LINE};$/;"	e	enum:SERVER_STAT
+SYNCING	src/global.h	/^enum SERVER_STAT {UNKOWN_STAT = 0, WAIT_SYNC, SYNCING, SYNCED, ON_LINE};$/;"	e	enum:SERVER_STAT
+Send	lib/CSmtp.cpp	/^void CSmtp::Send()$/;"	f	class:CSmtp
+SendBuf	lib/CSmtp.h	/^	char *SendBuf;$/;"	m	class:CSmtp
+SendData	lib/CSmtp.cpp	/^void CSmtp::SendData()$/;"	f	class:CSmtp
+SetHeadFlag	lib/CSmtp.cpp	/^void CSmtp::SetHeadFlag(int flag)$/;"	f	class:CSmtp
+SetLogin	lib/CSmtp.cpp	/^void CSmtp::SetLogin(const char *Login)$/;"	f	class:CSmtp
+SetMsgBody	lib/CSmtp.cpp	/^void CSmtp::SetMsgBody(const char *src)$/;"	f	class:CSmtp
+SetPassword	lib/CSmtp.cpp	/^void CSmtp::SetPassword(const char *Password)$/;"	f	class:CSmtp
+SetReplyTo	lib/CSmtp.cpp	/^void CSmtp::SetReplyTo(const char *ReplyTo)$/;"	f	class:CSmtp
+SetSMTPServer	lib/CSmtp.cpp	/^void CSmtp::SetSMTPServer(const char* SrvName,const unsigned short SrvPort)$/;"	f	class:CSmtp
+SetSenderMail	lib/CSmtp.cpp	/^void CSmtp::SetSenderMail(const char *EMail)$/;"	f	class:CSmtp
+SetSenderName	lib/CSmtp.cpp	/^void CSmtp::SetSenderName(const char *Name)$/;"	f	class:CSmtp
+SetSubject	lib/CSmtp.cpp	/^void CSmtp::SetSubject(const char *Subject)$/;"	f	class:CSmtp
+SetXMailer	lib/CSmtp.cpp	/^void CSmtp::SetXMailer(const char *XMailer)$/;"	f	class:CSmtp
+SetXPriority	lib/CSmtp.cpp	/^void CSmtp::SetXPriority(CSmptXPriority priority)$/;"	f	class:CSmtp
+ShowCerts	ssl_client/ssl_client.c	/^void ShowCerts(SSL * ssl)$/;"	f
+SmtpXYZdigits	lib/CSmtp.cpp	/^int CSmtp::SmtpXYZdigits()$/;"	f	class:CSmtp
+TARGET	echo/makefile	/^TARGET=sig.so$/;"	m
+TARGET	https/makefile	/^TARGET=sig.so$/;"	m
+TARGET	src/makefile	/^TARGET=$(NS)$/;"	m
+TARGET	ssl_client/makefile	/^TARGET=ssl_client$/;"	m
+TASK_DEL	src/task.h	/^enum {TASK_DEL = 0, TASK_HOLD};$/;"	e	enum:__anon10
+TASK_HOLD	src/task.h	/^enum {TASK_DEL = 0, TASK_HOLD};$/;"	e	enum:__anon10
+TASK_HOME	src/task.h	/^enum {TASK_HOME = 0, COLLECT_TASK, CANCEL_TASK, TASK_UNKNOWN};$/;"	e	enum:__anon8
+TASK_UNKNOWN	src/task.h	/^enum {TASK_HOME = 0, COLLECT_TASK, CANCEL_TASK, TASK_UNKNOWN};$/;"	e	enum:__anon8
+THREAD_EXITED	src/thread.h	/^	THREAD_EXITED,		\/* exited *\/$/;"	e	enum:__anon3
+THREAD_KILLED	src/thread.h	/^	THREAD_KILLED		\/* killed *\/$/;"	e	enum:__anon3
+THREAD_RUNNING	src/thread.h	/^	THREAD_RUNNING,		\/* busy running *\/$/;"	e	enum:__anon3
+THREAD_STANDBY	src/thread.h	/^	THREAD_STANDBY,		\/* in standby list *\/$/;"	e	enum:__anon3
+THREAD_STARTING	src/thread.h	/^	THREAD_STARTING,	\/* starting thread *\/$/;"	e	enum:__anon3
+THREAD_STOPPED	src/thread.h	/^	THREAD_STOPPED = 1,	\/* not running *\/$/;"	e	enum:__anon3
+THREAD_STOPPING	src/thread.h	/^	THREAD_STOPPING,	\/* stopping req *\/$/;"	e	enum:__anon3
+THREAD_UNUSED	src/thread.h	/^	THREAD_UNUSED = 0,	\/* slot not used *\/$/;"	e	enum:__anon3
+TIME_ERROR	lib/CSmtp.h	/^		TIME_ERROR,$/;"	e	enum:ECSmtp::CSmtpError
+TIME_IN_SEC	lib/CSmtp.h	42;"	d
+UNDEF_LOGIN	lib/CSmtp.h	/^		UNDEF_LOGIN,$/;"	e	enum:ECSmtp::CSmtpError
+UNDEF_MAIL_FROM	lib/CSmtp.h	/^		UNDEF_MAIL_FROM,$/;"	e	enum:ECSmtp::CSmtpError
+UNDEF_MSG_HEADER	lib/CSmtp.h	/^		UNDEF_MSG_HEADER = 200,$/;"	e	enum:ECSmtp::CSmtpError
+UNDEF_PASSWORD	lib/CSmtp.h	/^		UNDEF_PASSWORD,$/;"	e	enum:ECSmtp::CSmtpError
+UNDEF_RECIPIENTS	lib/CSmtp.h	/^		UNDEF_RECIPIENTS,$/;"	e	enum:ECSmtp::CSmtpError
+UNDEF_RECIPIENT_MAIL	lib/CSmtp.h	/^		UNDEF_RECIPIENT_MAIL,$/;"	e	enum:ECSmtp::CSmtpError
+UNDEF_SUBJECT	lib/CSmtp.h	/^		UNDEF_SUBJECT,$/;"	e	enum:ECSmtp::CSmtpError
+UNDEF_XYZ_RESPONSE	lib/CSmtp.h	/^		UNDEF_XYZ_RESPONSE,$/;"	e	enum:ECSmtp::CSmtpError
+UNKOWN_STAT	src/global.h	/^enum SERVER_STAT {UNKOWN_STAT = 0, WAIT_SYNC, SYNCING, SYNCED, ON_LINE};$/;"	e	enum:SERVER_STAT
+VAL_MAX_LEN	lib/myconfig.c	16;"	d	file:
+WAIT_SYNC	src/global.h	/^enum SERVER_STAT {UNKOWN_STAT = 0, WAIT_SYNC, SYNCING, SYNCED, ON_LINE};$/;"	e	enum:SERVER_STAT
+WORD	lib/CSmtp.h	/^	typedef unsigned short WORD;$/;"	t
+WRITE_STATUS	lib/util_http.c	26;"	d	file:
+WSA_CONNECT	lib/CSmtp.h	/^		WSA_CONNECT,$/;"	e	enum:ECSmtp::CSmtpError
+WSA_GETHOSTBY_NAME_ADDR	lib/CSmtp.h	/^		WSA_GETHOSTBY_NAME_ADDR,$/;"	e	enum:ECSmtp::CSmtpError
+WSA_HOSTNAME	lib/CSmtp.h	/^		WSA_HOSTNAME,$/;"	e	enum:ECSmtp::CSmtpError
+WSA_INVALID_SOCKET	lib/CSmtp.h	/^		WSA_INVALID_SOCKET,$/;"	e	enum:ECSmtp::CSmtpError
+WSA_IOCTLSOCKET	lib/CSmtp.h	/^		WSA_IOCTLSOCKET,$/;"	e	enum:ECSmtp::CSmtpError
+WSA_RECV	lib/CSmtp.h	/^		WSA_RECV,$/;"	e	enum:ECSmtp::CSmtpError
+WSA_SELECT	lib/CSmtp.h	/^		WSA_SELECT,$/;"	e	enum:ECSmtp::CSmtpError
+WSA_SEND	lib/CSmtp.h	/^		WSA_SEND,$/;"	e	enum:ECSmtp::CSmtpError
+WSA_STARTUP	lib/CSmtp.h	/^		WSA_STARTUP = 100, \/\/ WSAGetLastError()$/;"	e	enum:ECSmtp::CSmtpError
+WSA_VER	lib/CSmtp.h	/^		WSA_VER,$/;"	e	enum:ECSmtp::CSmtpError
+XPRIORITY_HIGH	lib/CSmtp.h	/^	XPRIORITY_HIGH = 2,$/;"	e	enum:CSmptXPriority
+XPRIORITY_LOW	lib/CSmtp.h	/^	XPRIORITY_LOW = 4$/;"	e	enum:CSmptXPriority
+XPRIORITY_NORMAL	lib/CSmtp.h	/^	XPRIORITY_NORMAL = 3,$/;"	e	enum:CSmptXPriority
+_BASE64_H_	lib/base64.h	4;"	d
+_COMMON_H_	lib/common.h	2;"	d
+_DAEMON_H_	src/daemon.h	2;"	d
+_FDINFO_H_	src/fdinfo.h	2;"	d
+_GLOBAL_H_	src/global.h	2;"	d
+_H_MD5_H	lib/md5.h	2;"	d
+_INIT_H_	src/init.h	2;"	d
+_LIST_H_	lib/list.h	2;"	d
+_LOG_H_	lib/log.h	2;"	d
+_MYBUFF_H_	src/mybuff.h	2;"	d
+_MYCONFIG_H_	lib/myconfig.h	2;"	d
+_MYEPOLL_H	lib/myepoll.h	2;"	d
+_PROTOCOL_H_	lib/protocol.h	2;"	d
+_SOLIB_H_	src/solib.h	2;"	d
+_SO_H_	src/so.h	2;"	d
+_TASK_H_	src/task.h	2;"	d
+_THREAD_H_	src/thread.h	2;"	d
+_UTIL_H_	lib/util.h	2;"	d
+_WATCHDOG_H_	src/watchdog.h	2;"	d
+__ARCH_X86_64_ATOMIC__	src/atomic.h	2;"	d
+__CSMTP_H__	lib/CSmtp.h	7;"	d
+__C_MAIL_H_	lib/c_mail.h	2;"	d
+__LOG_SIG_SO_H	echo/sig.h	2;"	d
+__LOG_SIG_SO_H	https/sig.h	2;"	d
+__USE_STRING_INLINES	lib/md5.c	21;"	d	file:
+__list_add	lib/list.h	/^static inline void __list_add(struct list_head *new1,$/;"	f
+__list_del	lib/list.h	/^static inline void __list_del(struct list_head *prev, struct list_head *next)$/;"	f
+__list_for_each	lib/list.h	197;"	d
+__list_for_each_prev	lib/list.h	209;"	d
+__list_splice	lib/list.h	/^static inline void __list_splice(struct list_head *list,$/;"	f
+accept_new	src/so.c	/^static void accept_new()$/;"	f	file:
+acon	src/fdinfo.c	/^struct conn *acon = NULL;$/;"	v	typeref:struct:conn
+active_send	echo/sig_base.c	/^int active_send(log_peer *peer, sig_head *h, sig_body *b)$/;"	f
+active_send	https/sig_base.c	/^int active_send(log_peer *peer, sig_head *h, sig_body *b)$/;"	f
+activelist	echo/sig.c	/^static list_head_t activelist;$/;"	v	file:
+activelist	https/sig.c	/^static list_head_t activelist;$/;"	v	file:
+add_fd_2_efd	src/so.c	/^void add_fd_2_efd(int fd)$/;"	f
+addreceiver	lib/c_mail.cpp	/^void addreceiver(CSmtp *mail, char *receivers, int type)$/;"	f
+alist	echo/sig.h	/^	list_head_t alist;$/;"	m	struct:__anon1
+alist	https/sig.h	/^	list_head_t alist;$/;"	m	struct:__anon17
+arg	src/thread.h	/^	void *arg;							$/;"	m	struct:thread
+arg_end	src/daemon.c	/^static char *arg_end;$/;"	v	file:
+arg_start	src/daemon.c	/^static char *arg_start;$/;"	v	file:
+atomic_add	src/atomic.h	/^static __inline__ void atomic_add(int i, atomic_t *v)$/;"	f
+atomic_add_negative	src/atomic.h	/^static __inline__ int atomic_add_negative(int i, atomic_t *v)$/;"	f
+atomic_clear_mask	src/atomic.h	190;"	d
+atomic_dec	src/atomic.h	/^static __inline__ void atomic_dec(atomic_t *v)$/;"	f
+atomic_dec_and_test	src/atomic.h	/^static __inline__ int atomic_dec_and_test(atomic_t *v)$/;"	f
+atomic_inc	src/atomic.h	/^static __inline__ void atomic_inc(atomic_t *v)$/;"	f
+atomic_inc_and_test	src/atomic.h	/^static __inline__ int atomic_inc_and_test(atomic_t *v)$/;"	f
+atomic_read	src/atomic.h	33;"	d
+atomic_set	src/atomic.h	43;"	d
+atomic_set_mask	src/atomic.h	194;"	d
+atomic_sub	src/atomic.h	/^static __inline__ void atomic_sub(int i, atomic_t *v)$/;"	f
+atomic_sub_and_test	src/atomic.h	/^static __inline__ int atomic_sub_and_test(int i, atomic_t *v)$/;"	f
+atomic_t	src/atomic.h	/^typedef struct { volatile int counter; } atomic_t;$/;"	t	typeref:struct:__anon2
+badcnt	src/watchdog.h	/^	int badcnt;			\/\/线程被判定为停滞状态的次数$/;"	m	struct:threadstat
+barrier	src/so.c	/^static inline void barrier(void) { __asm__ volatile("":::"memory"); }$/;"	f	file:
+barrier	src/so.c	/^static inline void barrier(void) { __sync_synchronize (); }$/;"	f	file:
+base64_chars	lib/base64.cpp	/^static const std::string base64_chars = $/;"	v	file:
+base64_decode	lib/base64.cpp	/^std::string base64_decode(std::string const& encoded_string) $/;"	f
+base64_encode	lib/base64.cpp	/^std::string base64_encode(unsigned char const* bytes_to_encode, unsigned int in_len) $/;"	f
+bccreceiver	lib/c_mail.h	/^	char *bccreceiver;$/;"	m	struct:__anon15
+bits	lib/md5.h	/^	uint32_t bits[2];$/;"	m	struct:MD5Context
+bk	lib/log.c	/^	unsigned char bk[3];$/;"	m	struct:__anon16	file:
+body	lib/protocol.h	/^	char body[MAX_SIG_BODY];$/;"	m	struct:__anon14
+bodylen	lib/protocol.h	/^	uint16_t bodylen;$/;"	m	struct:__anon13
+buf	lib/md5.h	/^	uint32_t buf[4];$/;"	m	struct:MD5Context
+build_ifs	lib/util_str.c	/^void inline build_ifs(char *tifs, const char *ifs0) {$/;"	f
+byteReverse	lib/md5.c	/^static void byteReverse(unsigned char *buf, unsigned longs)$/;"	f	file:
+byteReverse	lib/md5.c	28;"	d	file:
+ccreceiver	lib/c_mail.h	/^	char *ccreceiver;$/;"	m	struct:__anon15
+check_req	echo/sig.c	/^static int check_req(int fd)$/;"	f	file:
+check_req	https/sig.c	/^static int check_req(int fd)$/;"	f	file:
+check_request	https/sig.c	/^static int check_request(int fd, char* data, int len) $/;"	f	file:
+check_threadmap	src/watchdog.c	/^static void check_threadmap(void) {$/;"	f	file:
+chktimeout	src/init.h	/^	uint16_t chktimeout;	\/\/timeout to invoke so timeout method$/;"	m	struct:__anon4
+cmd_argv0	lib/myconfig.c	/^static char cmd_argv0[4096];$/;"	v	file:
+cmdid	lib/protocol.h	/^	uint8_t cmdid;$/;"	m	struct:__anon13
+compiling_date	src/version.c	/^const char compiling_date[] = __DATE__;$/;"	v
+conn	src/global.h	/^struct conn {$/;"	s
+consume_client_data	src/so.c	/^int consume_client_data(int fd, size_t len)$/;"	f
+content	lib/c_mail.h	/^	char *content;$/;"	m	struct:__anon15
+contenttype	lib/c_mail.h	/^	int contenttype; \/\/1普通文本 2html文本$/;"	m	struct:__anon15
+counter	src/atomic.h	/^typedef struct { volatile int counter; } atomic_t;$/;"	m	struct:__anon2
+create_sig_msg	lib/protocol.c	/^int create_sig_msg(uint8_t cmdid, uint8_t status, sig_body *b, char *o, uint16_t bodylen)$/;"	f
+create_tcpsocket	lib/util_http.c	/^static int create_tcpsocket(const char *host, const unsigned short port, const unsigned short ishttps)$/;"	f	file:
+createsocket	lib/myepoll.c	/^int createsocket(char *ip, int port)$/;"	f
+curid	src/thread.c	/^static int curid = 0;$/;"	v	file:
+curlogid	lib/log.c	/^static int curlogid = 0;$/;"	v	file:
+daemon_set_title	src/daemon.c	/^void daemon_set_title(const char *title) {$/;"	f
+daemon_start	src/daemon.c	/^int daemon_start(int argc, char **argv){	$/;"	f
+daemon_stop	src/daemon.c	/^void daemon_stop(void) {$/;"	f
+data	src/mybuff.h	/^	char* data;			\/\/buffer指针$/;"	m	struct:mybuff
+data_port	src/init.h	/^	uint16_t data_port;	$/;"	m	struct:__anon4
+deadlock_count	src/watchdog.c	/^static int deadlock_count = 1;$/;"	v	file:
+decode_hex	lib/util_hex.c	/^int decode_hex(const char* hex, char* bin, int buflen)$/;"	f
+default_ifs	lib/util_str.c	/^static const char default_ifs[256] = { [9]=1, [10]=1, [13]=1, [32]=1 };$/;"	v	file:
+delay_close	lib/log.c	/^static void delay_close(int num, int fd, int timeout)$/;"	f	file:
+do_close	src/so.c	/^void do_close(int fd)$/;"	f
+do_process	src/so.c	/^static void do_process(int fd, int events)$/;"	f	file:
+do_recv	src/so.c	/^static void do_recv(int fd)$/;"	f	file:
+do_req	echo/sig_base.c	/^static int do_req(int fd, sig_head *h, sig_body *b)   $/;"	f	file:
+do_send	src/so.c	/^static void do_send(int fd)$/;"	f	file:
+dup_argv	src/daemon.c	/^static void dup_argv(int argc, char **argv) {$/;"	f	file:
+enable_ssl	src/init.h	/^	uint8_t enable_ssl;	\/\/enable ssl$/;"	m	struct:__anon4
+encode_hex	lib/util_hex.c	/^int encode_hex(char* hex, const char* bin, int binlen)$/;"	f
+entry	src/thread.h	/^	int (*entry)(void *);$/;"	m	struct:thread
+env_start	src/daemon.c	/^static char *env_start;$/;"	v	file:
+epfd	src/so.c	/^static __thread int epfd;$/;"	v	file:
+epoll_add	lib/myepoll.c	/^void epoll_add(int epfd, int fd, int events) $/;"	f
+epoll_del	lib/myepoll.c	/^void epoll_del(int epfd, int fd) $/;"	f
+epoll_mod	lib/myepoll.c	/^void epoll_mod(int epfd, int fd, int events) $/;"	f
+fd	echo/sig.h	/^	int fd;$/;"	m	struct:__anon1
+fd	https/sig.h	/^	int fd;$/;"	m	struct:__anon17
+fd	lib/log.c	/^	int fd;				\/\/log fd, internel variable		$/;"	m	struct:logentity	file:
+fd	lib/log.c	/^	int fd;$/;"	m	struct:__anon16	file:
+fd	src/global.h	/^	int fd;      \/\/recheck avoid coredump$/;"	m	struct:conn
+fd	src/mybuff.h	/^	int fd;$/;"	m	struct:mybuff
+fdinfo	lib/log.c	/^	t_fdinfo fdinfo;    \/\/store delay_close info;$/;"	m	struct:logentity	file:
+find_ip_stat	echo/sig_base.c	/^int find_ip_stat(uint32_t ip, log_peer **dpeer)$/;"	f
+find_ip_stat	https/sig_base.c	/^int find_ip_stat(uint32_t ip, log_peer **dpeer)$/;"	f
+fini_fdinfo	src/fdinfo.c	/^void fini_fdinfo(void) {$/;"	f
+flag	src/so.h	/^	char flag; \/*是否需要设置sockbuff ，对信令线路采用默认设置，对数据链路采用配置文件设置 *\/$/;"	m	struct:__anon5
+flen	src/mybuff.h	/^	size_t flen;$/;"	m	struct:mybuff
+fn	lib/log.c	/^	char fn[256];		\/\/log filename, caller set$/;"	m	struct:logentity	file:
+foffset	src/mybuff.h	/^	off_t foffset;$/;"	m	struct:mybuff
+free_argv	src/daemon.c	/^static void free_argv(void) {$/;"	f	file:
+func	lib/myconfig.c	/^	int (*func)(void);$/;"	m	struct:reload_cb	file:
+g_config	src/init.c	/^t_g_config g_config;$/;"	v
+g_timelock_time	src/task.c	/^static int g_timelock_time = 3;$/;"	v	file:
+gen_pidfile	src/main.c	/^static void gen_pidfile() {$/;"	f	file:
+get_client_data	src/so.c	/^int get_client_data(int fd, char **data, size_t *len)$/;"	f
+get_ip_by_domain	lib/common.c	/^int get_ip_by_domain(char *serverip, char *domain)$/;"	f
+get_listen_sock	lib/myepoll.c	/^int get_listen_sock(int port)$/;"	f
+get_my_thread	src/thread.c	/^struct thread *get_my_thread(void) {$/;"	f
+get_progname	src/daemon.c	/^static void get_progname(void) {    $/;"	f	file:
+get_result	https/sig.c	/^static int get_result(char *url, char *buf, int len)$/;"	f	file:
+get_strdate	lib/common.c	/^int get_strdate(char *buf)$/;"	f
+get_strtime	lib/common.c	/^int get_strtime(char *buf)$/;"	f
+get_thread_id	src/thread.c	/^int get_thread_id() { $/;"	f
+get_threadstat	src/watchdog.c	/^struct threadstat *get_threadstat(void) {$/;"	f
+getconfigname	lib/myconfig.c	/^static void getconfigname(char* buf, const char* argv0) {$/;"	f	file:
+getcpunum	lib/util_misc.c	/^int getcpunum() {$/;"	f
+getfilemd5	lib/util_misc.c	/^int getfilemd5(const char* filename, unsigned char* md5) {$/;"	f
+getfilemd5view	lib/util_misc.c	/^int getfilemd5view(const char* filename, unsigned char* md5) $/;"	f
+getipbyif	lib/util_ip.c	/^unsigned getipbyif(const char* ifname) {$/;"	f
+getloglevel	lib/log.c	/^int getloglevel(const char* llstr) $/;"	f
+getmd5	lib/util_misc.c	/^void getmd5(const char* data, unsigned len, unsigned char* md5) {$/;"	f
+getpeerip	lib/util_ip.c	/^unsigned getpeerip(int fd) {$/;"	f
+glogfd	src/main.c	/^int glogfd = -1;$/;"	v
+hSocket	lib/CSmtp.h	/^	SOCKET hSocket;$/;"	m	class:CSmtp
+handle	src/solib.h	/^	void* handle;$/;"	m	struct:mylib
+handle_pre_ssl	src/so.c	/^static int handle_pre_ssl(int fd, int op_type)$/;"	f	file:
+handle_request	https/sig.c	/^static int handle_request(int cfd) $/;"	f	file:
+handler10sec	src/watchdog.c	/^static void handler10sec(int signo) {$/;"	f	file:
+hash	lib/myconfig.c	/^	uint32_t hash;		\/\/hash value for key$/;"	m	struct:myconfig	file:
+hbtime	echo/sig.h	/^	uint32_t hbtime;$/;"	m	struct:__anon1
+hbtime	https/sig.h	/^	uint32_t hbtime;$/;"	m	struct:__anon17
+hlist	echo/sig.h	/^	list_head_t hlist;$/;"	m	struct:__anon1
+hlist	https/sig.h	/^	list_head_t hlist;$/;"	m	struct:__anon17
+hlist	src/task.h	/^	list_head_t hlist;$/;"	m	struct:__anon11
+http_get	lib/util_http.c	/^int http_get(char **res, char *url)$/;"	f
+iclose	lib/log.c	/^	unsigned char iclose;$/;"	m	struct:__anon16	file:
+id	src/thread.h	/^	unsigned short id;$/;"	m	struct:thread
+in	lib/md5.h	/^	uint8_t  in[64];$/;"	m	struct:MD5Context
+init_buff_size	src/main.c	/^int init_buff_size = 20480;$/;"	v
+init_fdinfo	src/fdinfo.c	/^int init_fdinfo(void) {	$/;"	f
+init_global	src/init.c	/^int init_global()$/;"	f
+init_glog	src/main.c	/^static int init_glog()$/;"	f	file:
+init_local_ip	src/init.c	/^static int init_local_ip()$/;"	f	file:
+init_log	lib/log.c	/^int init_log()$/;"	f
+init_ssl	src/so.c	/^static int init_ssl(int fd)$/;"	f	file:
+init_task_info	src/task.c	/^int init_task_info()$/;"	f
+init_thread	src/thread.c	/^int init_thread(void) {$/;"	f
+init_threadmap	src/watchdog.c	/^static void init_threadmap(void) {$/;"	f	file:
+init_work_thread	src/init.c	/^int init_work_thread(t_thread_arg *arg)                                                                                                           $/;"	f
+inited	lib/myconfig.c	/^static int inited = 0;$/;"	v	file:
+initnextlogno	lib/log.c	/^static int initnextlogno(struct logentity* le) $/;"	f	file:
+inline	lib/md5.c	19;"	d	file:
+installdir	makefile	/^installdir = \/home\/nemo$/;"	m
+int2str	lib/util.h	/^static inline char *int2str(char *p, int32_t n) {$/;"	f
+intval	lib/myconfig.c	/^	int intval;			\/\/integer format for value$/;"	m	struct:myconfig	file:
+inuse	src/thread.h	/^	unsigned char inuse;$/;"	m	struct:thread
+iobuf	src/so.c	/^static __thread char *iobuf;$/;"	v	file:
+ip	echo/sig.h	/^	uint32_t ip;$/;"	m	struct:__anon1
+ip	https/sig.h	/^	uint32_t ip;$/;"	m	struct:__anon17
+ip2str	lib/util_ip.c	/^char *ip2str(char *str, uint32_t ip) {$/;"	f
+is_base64	lib/base64.cpp	/^static inline bool is_base64(unsigned char c) $/;"	f	file:
+key	lib/myconfig.c	/^	char key[0];		\/\/key$/;"	m	struct:myconfig	file:
+len	src/mybuff.h	/^	size_t len;		\/\/数据有效长度$/;"	m	struct:mybuff
+lfd	src/so.c	/^static __thread int lfd;$/;"	v	file:
+list	lib/myconfig.c	/^	list_head_t list;$/;"	m	struct:myconfig	file:
+list	lib/myconfig.c	/^	list_head_t list;$/;"	m	struct:prehash	file:
+list_add	lib/list.h	/^static inline void list_add(struct list_head *new1, struct list_head *head)$/;"	f
+list_add_tail	lib/list.h	/^static inline void list_add_tail(struct list_head *new1, struct list_head *head)$/;"	f
+list_del	lib/list.h	/^static inline void list_del(struct list_head *entry)$/;"	f
+list_del_init	lib/list.h	/^static inline void list_del_init(struct list_head *entry)$/;"	f
+list_empty	lib/list.h	/^static inline int list_empty(struct list_head *head)$/;"	f
+list_entry	lib/list.h	184;"	d
+list_for_each	lib/list.h	192;"	d
+list_for_each_entry	lib/list.h	229;"	d
+list_for_each_entry_safe	lib/list.h	244;"	d
+list_for_each_entry_safe_l	lib/list.h	250;"	d
+list_for_each_prev	lib/list.h	204;"	d
+list_for_each_safe	lib/list.h	219;"	d
+list_head	lib/list.h	/^struct list_head {$/;"	s
+list_head_t	lib/list.h	/^typedef struct list_head list_head_t;$/;"	t	typeref:struct:list_head
+list_move	lib/list.h	/^static inline void list_move(struct list_head *list, struct list_head *head)$/;"	f
+list_move_tail	lib/list.h	/^static inline void list_move_tail(struct list_head *list,$/;"	f
+list_splice	lib/list.h	/^static inline void list_splice(struct list_head *list, struct list_head *head)$/;"	f
+list_splice_init	lib/list.h	/^static inline void list_splice_init(struct list_head *list,$/;"	f
+llist	src/task.h	/^	list_head_t llist;$/;"	m	struct:__anon11
+localip	src/init.c	/^uint32_t localip[64];$/;"	v
+log_get_task	src/task.c	/^int log_get_task(log_tasklist **task, int status)$/;"	f
+log_mutex	lib/log.c	/^static pthread_mutex_t log_mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+log_peer	echo/sig.h	/^} log_peer;$/;"	t	typeref:struct:__anon1
+log_peer	https/sig.h	/^} log_peer;$/;"	t	typeref:struct:__anon17
+log_set_task	src/task.c	/^int log_set_task(log_tasklist *task, int status)$/;"	f
+log_signalling_thread	src/so.c	/^int log_signalling_thread(void *arg)$/;"	f
+log_tasklist	src/task.h	/^}log_tasklist;$/;"	t	typeref:struct:__anon11
+logclose	lib/log.c	/^void logclose(int fd)$/;"	f
+logcolors	lib/log.c	/^static char *logcolors[] = {"36m", "35m", "32m", "31m", "41;30m", "41;30m"};$/;"	v	file:
+logentities	lib/log.c	/^static struct logentity logentities[MAX_LOG];$/;"	v	typeref:struct:logentity	file:
+logentity	lib/log.c	/^struct logentity {$/;"	s	file:
+loglevel	lib/log.c	/^	int loglevel;		\/\/log level, caller set$/;"	m	struct:logentity	file:
+loglevel	lib/log.h	/^enum loglevel {LOG_TRACE = 0, LOG_DEBUG, LOG_NORMAL, LOG_ERROR, LOG_FAULT, LOG_NONE}; $/;"	g
+logstring	lib/log.c	/^static char *logstring[] = {"TRACE", "DEBUG", "NORMAL", "ERROR", "FAULT", "NONE"};$/;"	v	file:
+logtask	src/task.c	/^static list_head_t logtask[TASK_UNKNOWN];$/;"	v	file:
+m_headflag	lib/CSmtp.h	/^	int m_headflag;$/;"	m	class:CSmtp
+m_iSMTPSrvPort	lib/CSmtp.h	/^	unsigned short m_iSMTPSrvPort;$/;"	m	class:CSmtp
+m_iXPriority	lib/CSmtp.h	/^	CSmptXPriority m_iXPriority;$/;"	m	class:CSmtp
+m_msgbody	lib/CSmtp.h	/^	const char *m_msgbody;$/;"	m	class:CSmtp
+m_sIPAddr	lib/CSmtp.h	/^	std::string m_sIPAddr;$/;"	m	class:CSmtp
+m_sLocalHostName	lib/CSmtp.h	/^	std::string m_sLocalHostName;$/;"	m	class:CSmtp
+m_sLogin	lib/CSmtp.h	/^	std::string m_sLogin;$/;"	m	class:CSmtp
+m_sMailFrom	lib/CSmtp.h	/^	std::string m_sMailFrom;$/;"	m	class:CSmtp
+m_sNameFrom	lib/CSmtp.h	/^	std::string m_sNameFrom;$/;"	m	class:CSmtp
+m_sPassword	lib/CSmtp.h	/^	std::string m_sPassword;$/;"	m	class:CSmtp
+m_sReplyTo	lib/CSmtp.h	/^	std::string m_sReplyTo;$/;"	m	class:CSmtp
+m_sSMTPSrvName	lib/CSmtp.h	/^	std::string m_sSMTPSrvName;$/;"	m	class:CSmtp
+m_sSubject	lib/CSmtp.h	/^	std::string m_sSubject;$/;"	m	class:CSmtp
+m_sXMailer	lib/CSmtp.h	/^	std::string m_sXMailer;$/;"	m	class:CSmtp
+mail_info	lib/c_mail.h	/^} mail_info;$/;"	t	typeref:struct:__anon15
+main	lib/testmail.c	/^int main(int argc, char **argv)$/;"	f
+main	src/epoll_udp.c	/^int main(int argc, char **argv)$/;"	f
+main	src/main.c	/^int main(int argc, char **argv) {	$/;"	f
+main	src/udp_client.c	/^int main(int argc, char**argv)$/;"	f
+main	ssl_client/ssl_client.c	/^int main(int argc, char **argv)$/;"	f
+main_loop	src/main.c	/^static void main_loop(struct threadstat *thst) {$/;"	f	file:
+maintain_log	lib/log.c	/^static void * maintain_log(void *arg)$/;"	f	file:
+mainthread	src/thread.c	/^struct thread mainthread;$/;"	v	typeref:struct:thread
+maxevent	src/so.c	/^static __thread int maxevent;$/;"	v	file:
+maxevent	src/so.h	/^	int maxevent;$/;"	m	struct:__anon5
+maxfds	src/fdinfo.c	/^int maxfds = 4096; $/;"	v
+maxid	src/thread.c	/^static int maxid;$/;"	v	file:
+maxlognum	lib/log.c	/^	int maxlognum;		\/\/maximum log files number, caller set		$/;"	m	struct:logentity	file:
+md5_t	lib/md5.h	/^typedef struct MD5Context md5_t;$/;"	t	typeref:struct:MD5Context
+modify_fd_event	src/so.c	/^void modify_fd_event(int fd, int events)$/;"	f
+mthreads	src/watchdog.c	/^			int mthreads;$/;"	m	struct:threadmap::__anon6::__anon7	file:
+mutex	src/task.c	/^static pthread_mutex_t mutex[TASK_UNKNOWN];$/;"	v	file:
+mv_task_to	src/task.c	/^int mv_task_to(log_tasklist *task, int status)$/;"	f
+mybuff	src/mybuff.h	/^struct mybuff {$/;"	s
+mybuff_fini	src/mybuff.c	/^void mybuff_fini(struct mybuff* mybuff) {$/;"	f
+mybuff_getdata	src/mybuff.c	/^int mybuff_getdata(struct mybuff* mybuff, char** data, size_t * len) {$/;"	f
+mybuff_getfile	src/mybuff.c	/^int mybuff_getfile(struct mybuff* mybuff, int* fd, off_t * offset, size_t * len) {$/;"	f
+mybuff_init	src/mybuff.c	/^void mybuff_init(struct mybuff* mybuff) {$/;"	f
+mybuff_reinit	src/mybuff.c	/^void mybuff_reinit(struct mybuff* mybuff) {$/;"	f
+mybuff_setdata	src/mybuff.c	/^int mybuff_setdata(struct mybuff* mybuff, const char* data, size_t len) {$/;"	f
+mybuff_setfile	src/mybuff.c	/^int mybuff_setfile(struct mybuff* mybuff, int fd, off_t offset, size_t len) {$/;"	f
+mybuff_skipdata	src/mybuff.c	/^void mybuff_skipdata(struct mybuff* mybuff, size_t len) {$/;"	f
+mybuff_skipfile	src/mybuff.c	/^void mybuff_skipfile(struct mybuff* mybuff, size_t len) {$/;"	f
+myconfig	lib/myconfig.c	/^struct myconfig {$/;"	s	file:
+myconfig_cleanup	lib/myconfig.c	/^int myconfig_cleanup(void) {$/;"	f
+myconfig_delete_value	lib/myconfig.c	/^int myconfig_delete_value(const char *prefix, const char *key) {$/;"	f
+myconfig_dump_to_file	lib/myconfig.c	/^int myconfig_dump_to_file()$/;"	f
+myconfig_get_decimal	lib/myconfig.c	/^double myconfig_get_decimal(const char *key) {$/;"	f
+myconfig_get_intval	lib/myconfig.c	/^int myconfig_get_intval(const char *key, int def) {$/;"	f
+myconfig_get_multivalue	lib/myconfig.c	/^char* myconfig_get_multivalue(const char *key, int index) {$/;"	f
+myconfig_get_size	lib/myconfig.c	/^unsigned long myconfig_get_size(const char *key, int def) {$/;"	f
+myconfig_get_value	lib/myconfig.c	/^char* myconfig_get_value(const char *key) {$/;"	f
+myconfig_init	lib/myconfig.c	/^int myconfig_init(int argc, char **argv) {$/;"	f
+myconfig_loadfile0	lib/myconfig.c	/^static int myconfig_loadfile0(const char *file) {$/;"	f	file:
+myconfig_put_value	lib/myconfig.c	/^int myconfig_put_value(const char *pre, const char *key0, const char *val) {$/;"	f
+myconfig_register_reload	lib/myconfig.c	/^void myconfig_register_reload(int (*func)(void), char** keys, int keynum) {$/;"	f
+myconfig_reload	lib/myconfig.c	/^void myconfig_reload() {$/;"	f
+myconfig_update_value	lib/myconfig.c	/^int myconfig_update_value(const char *key, const char *value) {$/;"	f
+myhash	lib/myconfig.c	/^static list_head_t myhash[256];$/;"	v	file:
+mylib	src/solib.h	/^struct mylib {$/;"	s
+mythreadid	src/thread.c	/^static __thread int mythreadid;$/;"	v	file:
+name	src/so.h	/^	char name[255];$/;"	m	struct:__anon5
+name	src/thread.h	/^	char name[64];$/;"	m	struct:thread
+next	lib/list.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+next	lib/myconfig.c	/^	struct reload_cb* next;$/;"	m	struct:reload_cb	typeref:struct:reload_cb::reload_cb	file:
+nextlogno	lib/log.c	/^	int nextlogno;		\/\/next log file no, internel variable$/;"	m	struct:logentity	file:
+nop_handler	src/daemon.c	/^static void nop_handler(int signo) {$/;"	f	file:
+nowtime	lib/log.h	12;"	d
+nthreads	src/watchdog.c	/^			int nthreads;$/;"	m	struct:threadmap::__anon6::__anon7	file:
+online_list	echo/sig.c	/^static list_head_t online_list[256];$/;"	v	file:
+online_list	https/sig.c	/^static list_head_t online_list[256];$/;"	v	file:
+openfile	lib/log.c	/^static int openfile(const char* fn) $/;"	f	file:
+padding	src/watchdog.c	/^		char padding[16<<10];$/;"	m	union:threadmap::__anon6	file:
+parse_args	src/main.c	/^static int parse_args(int argc, char* argv[]) {$/;"	f	file:
+parse_sig_msg	lib/protocol.c	/^int parse_sig_msg(sig_head *h, sig_body *b, char *s, int slen)$/;"	f
+parse_src	lib/util_http.c	/^static void parse_src(char *src, char *domain, char *requestpath, int *port, int *ishttps)$/;"	f	file:
+passwd	lib/c_mail.h	/^	char *passwd;$/;"	m	struct:__anon15
+peerip	src/global.h	/^	char peerip[16];    \/\/for debug print$/;"	m	struct:conn
+pev	src/so.c	/^static __thread struct epoll_event *pev;$/;"	v	typeref:struct:epoll_event	file:
+pid	src/thread.h	/^	pid_t pid;$/;"	m	struct:thread
+port	lib/c_mail.h	/^	int port;$/;"	m	struct:__anon15
+port	src/so.h	/^	int port;$/;"	m	struct:__anon5
+pre	lib/myconfig.c	/^	char pre[20];$/;"	m	struct:prehash	file:
+pre_list	lib/myconfig.c	/^	list_head_t pre_list;$/;"	m	struct:myconfig	file:
+prehash	lib/myconfig.c	/^struct prehash {$/;"	s	file:
+prelist	lib/myconfig.c	/^static struct prehash     prelist[256];$/;"	v	typeref:struct:prehash	file:
+prev	lib/list.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::
+proc_fini	src/solib.h	/^typedef void (*proc_fini) (int fd);$/;"	t
+proc_init	src/solib.h	/^typedef int (*proc_init) (void);$/;"	t
+proc_method	src/solib.h	/^typedef int (*proc_method) (int fd);$/;"	t
+proc_timeout	src/solib.h	/^typedef void (*proc_timeout) (void);$/;"	t
+progname	src/daemon.c	/^static char *progname = NULL;$/;"	v	file:
+pthread_handle_message	src/epoll_udp.c	/^void* pthread_handle_message(int* sock_fd)$/;"	f
+r5hash	lib/common.c	/^uint32_t r5hash(const char *p) $/;"	f
+receiver	lib/c_mail.h	/^	char *receiver;$/;"	m	struct:__anon15
+recv_buff	src/global.h	/^	struct mybuff recv_buff;	\/\/recv buffer for client$/;"	m	struct:conn	typeref:struct:conn::mybuff
+register_thread	src/thread.c	/^int register_thread(const char *name, int (*entry)(void *), void *arg) {$/;"	f
+registerlog	lib/log.c	/^int registerlog(const char* filename, int level, int rotatesize, int rotateintval, int filenum)$/;"	f
+registerlog_internal	lib/log.c	/^static int registerlog_internal(struct logentity* le) $/;"	f	file:
+reload_cb	lib/myconfig.c	/^struct reload_cb {$/;"	s	file:
+reload_cb_list	lib/myconfig.c	/^static struct reload_cb* reload_cb_list = NULL;$/;"	v	typeref:struct:reload_cb	file:
+reload_handler	src/daemon.c	/^static void reload_handler(int signo) {$/;"	f	file:
+reload_key	lib/myconfig.c	/^static const char* reload_key[MAX_RELOAD_KEY_NUM] = {	\/* config keys could be reload *\/$/;"	v	file:
+restart	src/daemon.c	/^volatile int restart = 1;$/;"	v
+rotateintval	lib/log.c	/^	int rotateintval;	\/\/rotate interval time, caller set, 0 for disable	$/;"	m	struct:logentity	file:
+rotatesize	lib/log.c	/^	int rotatesize;		\/\/rotate size(max log file size), caller set, 0 for disable$/;"	m	struct:logentity	file:
+rotatetime	lib/log.c	/^	unsigned int rotatetime;		\/\/internel variable$/;"	m	struct:logentity	file:
+rv	src/thread.h	/^	int rv;$/;"	m	struct:thread
+saved_argc	src/daemon.c	/^static int saved_argc = 0;$/;"	v	file:
+saved_argv	src/daemon.c	/^static char **saved_argv = NULL;$/;"	v	file:
+scan_status_task	src/task.c	/^int scan_status_task(int status, timeout_task ob, int del)$/;"	f
+scanlogs	lib/log.c	/^static void scanlogs() $/;"	f	file:
+self_stat	src/init.h	/^uint8_t self_stat;$/;"	v
+sendName	lib/c_mail.h	/^	char *sendName;$/;"	m	struct:__anon15
+send_buff	src/global.h	/^	struct mybuff send_buff;	\/\/send buffer for client$/;"	m	struct:conn	typeref:struct:conn::mybuff
+send_len	src/global.h	/^	int send_len;            \/\/send len between call svc_send$/;"	m	struct:conn
+sendbuf	https/sig.c	/^char sendbuf[SENDBUFSIZE];$/;"	v
+sender	lib/c_mail.h	/^	char *sender;$/;"	m	struct:__anon15
+sendmail	lib/c_mail.cpp	/^int sendmail(const mail_info *mailinfo, char *errmsg)$/;"	f
+sep	lib/myconfig.c	/^static const char sep[256] = { [' ']=1, ['.']=1, ['-']=1, ['_']=1 };$/;"	v	file:
+server_stat	echo/sig.h	/^	uint8_t server_stat; \/* SERVER_STAT*\/$/;"	m	struct:__anon1
+server_stat	https/sig.h	/^	uint8_t server_stat; \/* SERVER_STAT*\/$/;"	m	struct:__anon17
+set_client_data	src/so.c	/^int set_client_data(int fd, char *buf, size_t len)$/;"	f
+set_client_fd	src/so.c	/^int set_client_fd(int fd, int localfd, size_t offset, size_t len)$/;"	f
+set_socket_attr	src/so.c	/^static void set_socket_attr(int fd)$/;"	f	file:
+setnonblocking	src/epoll_udp.c	/^int setnonblocking(int sockfd)$/;"	f
+shiftfile	lib/log.c	/^static int shiftfile(struct logentity* le) $/;"	f	file:
+sig_body	lib/protocol.h	/^}sig_body;$/;"	t	typeref:struct:__anon14
+sig_head	lib/protocol.h	/^}sig_head;$/;"	t	typeref:struct:__anon13
+sig_log	echo/sig.c	/^int sig_log = -1;$/;"	v
+sig_log	https/sig.c	/^int sig_log = -1;$/;"	v
+sig_port	src/init.h	/^	uint16_t sig_port;	$/;"	m	struct:__anon4
+sighup_handler	src/daemon.c	/^static void sighup_handler(int signo) {$/;"	f	file:
+sigterm_handler	src/daemon.c	/^static void sigterm_handler(int signo) {$/;"	f	file:
+size	src/mybuff.h	/^	size_t size;		\/\/buffer大小$/;"	m	struct:mybuff
+smp_mb__after_atomic_dec	src/atomic.h	200;"	d
+smp_mb__after_atomic_inc	src/atomic.h	202;"	d
+smp_mb__before_atomic_dec	src/atomic.h	199;"	d
+smp_mb__before_atomic_inc	src/atomic.h	201;"	d
+sock_stat	echo/sig.h	/^	uint8_t sock_stat;   \/* SOCK_STAT *\/$/;"	m	struct:__anon1
+sock_stat	https/sig.h	/^	uint8_t sock_stat;   \/* SOCK_STAT *\/$/;"	m	struct:__anon17
+solib	src/so.c	/^static __thread struct mylib solib;$/;"	v	typeref:struct:mylib	file:
+ssl	src/global.h	/^	SSL *ssl;	\/\/ssl object$/;"	m	struct:conn
+ssl	src/so.c	/^static __thread SSL *ssl;$/;"	v	file:
+ssl_accept_new	src/so.c	/^static int ssl_accept_new(int fd)$/;"	f	file:
+ssl_ctx	src/so.c	/^static __thread SSL_CTX *ssl_ctx;$/;"	v	file:
+ssl_do_recv	src/so.c	/^static int ssl_do_recv(int fd)$/;"	f	file:
+ssl_do_send	src/so.c	/^static int ssl_do_send(int fd)$/;"	f	file:
+ssl_pri_key	src/init.h	/^	char ssl_pri_key[256];	\/\/ssl private key file path$/;"	m	struct:__anon4
+ssl_pub_key	src/init.h	/^	char ssl_pub_key[256];	\/\/ssl public key file path$/;"	m	struct:__anon4
+ssl_want_read	src/global.h	/^	int ssl_want_read;	\/\/wait for read SSL_OPER $/;"	m	struct:conn
+ssl_want_write	src/global.h	/^	int ssl_want_write;	\/\/wait for write SSL_OPER$/;"	m	struct:conn
+start_thread_posix	src/thread.c	/^static int start_thread_posix(struct thread *th) {$/;"	f	file:
+start_threads	src/thread.c	/^int start_threads() {$/;"	f
+start_watchdog	src/watchdog.c	/^int start_watchdog(void) {$/;"	f
+state	src/thread.h	/^	unsigned char state;$/;"	m	struct:thread
+status	lib/protocol.h	/^	uint8_t status;$/;"	m	struct:__anon13
+status	src/task.h	/^	int status; \/\/任务所在队列类型$/;"	m	struct:__anon11
+stmp_server	lib/c_mail.h	/^	char *stmp_server;$/;"	m	struct:__anon15
+stop	src/daemon.c	/^volatile int stop = 0;$/;"	v
+stop_threads	src/thread.c	/^void stop_threads() {$/;"	f
+str2ip	lib/util_ip.c	/^uint32_t str2ip(const char *str) {$/;"	f
+str_explode	lib/util_str.c	/^int str_explode(const char *ifs, char *line0, char *field[], int n) {$/;"	f
+sub_init_signalling	src/so.c	/^static int sub_init_signalling(char *so)$/;"	f	file:
+svc_finiconn	echo/sig.c	/^void svc_finiconn(int fd)$/;"	f
+svc_finiconn	https/sig.c	/^void svc_finiconn(int fd)$/;"	f
+svc_finiconn	src/solib.h	/^	proc_fini		svc_finiconn;\/\/O	$/;"	m	struct:mylib
+svc_init	echo/sig.c	/^int svc_init() $/;"	f
+svc_init	https/sig.c	/^int svc_init() $/;"	f
+svc_init	src/solib.h	/^	proc_init		svc_init;    \/\/O$/;"	m	struct:mylib
+svc_initconn	echo/sig.c	/^int svc_initconn(int fd) $/;"	f
+svc_initconn	https/sig.c	/^int svc_initconn(int fd) $/;"	f
+svc_initconn	src/solib.h	/^	proc_method		svc_initconn;\/\/O	$/;"	m	struct:mylib
+svc_recv	echo/sig.c	/^int svc_recv(int fd) $/;"	f
+svc_recv	https/sig.c	/^int svc_recv(int fd) $/;"	f
+svc_recv	src/solib.h	/^	proc_method		svc_recv; \/\/M	$/;"	m	struct:mylib
+svc_send	echo/sig.c	/^int svc_send(int fd)$/;"	f
+svc_send	https/sig.c	/^int svc_send(int fd)$/;"	f
+svc_send	src/solib.h	/^	proc_method		svc_send;  \/\/M$/;"	m	struct:mylib
+svc_timeout	echo/sig.c	/^void svc_timeout()$/;"	f
+svc_timeout	https/sig.c	/^void svc_timeout()$/;"	f
+svc_timeout	src/solib.h	/^	proc_timeout	svc_timeout; \/\/O$/;"	m	struct:mylib
+t_fdinfo	lib/log.c	/^}t_fdinfo;$/;"	t	typeref:struct:__anon16	file:
+t_g_config	src/init.h	/^} t_g_config;$/;"	t	typeref:struct:__anon4
+t_thread_arg	src/so.h	/^} t_thread_arg;$/;"	t	typeref:struct:__anon5
+thread	src/thread.h	/^struct thread {$/;"	s
+thread_entry	src/thread.c	/^static int thread_entry(struct thread *th) {$/;"	f	file:
+thread_jumbo_title	src/thread.c	/^void thread_jumbo_title(void) {$/;"	f
+thread_reached	src/watchdog.h	/^static inline void thread_reached(struct threadstat *ts) {$/;"	f
+threadcount	src/so.h	/^	int threadcount;$/;"	m	struct:__anon5
+threadlist	src/thread.c	/^static struct thread **threadlist;$/;"	v	typeref:struct:thread	file:
+threadlist	src/watchdog.c	/^			struct threadstat threadlist[0];$/;"	m	struct:threadmap::__anon6::__anon7	typeref:struct:threadmap::__anon6::__anon7::threadstat	file:
+threadmap	src/watchdog.c	/^static struct threadmap threadmap[1] __attribute__((__aligned__(4096), __section__(".bss.shared")));$/;"	v	typeref:struct:threadmap	file:
+threadmap	src/watchdog.c	/^struct threadmap {$/;"	s	file:
+threadstat	src/watchdog.h	/^struct threadstat {$/;"	s
+tickcnt	src/watchdog.h	/^	atomic_t tickcnt;	\/\/tick数目$/;"	m	struct:threadstat
+tid	src/thread.h	/^	pthread_t tid;$/;"	m	struct:thread
+tid	src/watchdog.h	/^	int tid;			\/\/线程ID$/;"	m	struct:threadstat
+timeout	lib/log.c	/^	time_t timeout;$/;"	m	struct:__anon16	file:
+timeout	src/init.h	/^	uint16_t timeout;  \/\/timeout to close connect$/;"	m	struct:__anon4
+timeout_microsec	lib/util_http.c	/^static int timeout_microsec = 0;$/;"	v	file:
+timeout_sec	lib/util_http.c	/^static int timeout_sec = 10;$/;"	v	file:
+timeout_task	src/task.h	/^typedef void (*timeout_task)(log_tasklist *task);$/;"	t
+title	lib/c_mail.h	/^	char *title;$/;"	m	struct:__anon15
+trim_in	lib/common.c	/^void trim_in(char *s, char *d)$/;"	f
+uint2str	lib/util.h	/^static inline char *uint2str(char *p, uint32_t n) {$/;"	f
+used	lib/myconfig.c	/^	int used;$/;"	m	struct:prehash	file:
+user	src/global.h	/^	void* user;				\/\/user custom data$/;"	m	struct:conn
+user	src/task.h	/^	void *user; \/\/用户自定义$/;"	m	struct:__anon11
+username	lib/c_mail.h	/^	char *username;$/;"	m	struct:__anon15
+val	lib/myconfig.c	/^	char *val;			\/\/value $/;"	m	struct:myconfig	file:
+version_string	src/version.c	/^const char version_string[] = _NS_"_0.1";$/;"	v
+wait_thread_posix	src/thread.c	/^static void wait_thread_posix(struct thread *th) {$/;"	f	file:
+watchdog_pid	src/watchdog.c	/^int watchdog_pid;$/;"	v
+xnet_select	lib/util_http.c	/^static int xnet_select(int s, int sec, int usec, short x)$/;"	f	file:
+~CSmtp	lib/CSmtp.cpp	/^CSmtp::~CSmtp()$/;"	f	class:CSmtp
