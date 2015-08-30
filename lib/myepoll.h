@@ -18,7 +18,7 @@ void epoll_mod(int epfd, int fd, int events);
 
 void epoll_del(int epfd, int fd);
 	
-int get_listen_sock(int port);
+int get_listen_sock(int port, int protocol);
 
 int createsocket(char *ip, int port);
 

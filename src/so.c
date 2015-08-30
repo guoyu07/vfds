@@ -267,7 +267,7 @@ static int ssl_do_send(int fd)
 	return 0;
 }
 
-static void do_send(int fd)
+static void do_send(int fd, int ssl)
 {
 	LOG(glogfd, LOG_DEBUG, "%s:%s:%d\n", ID, FUNC, LN);
 	int ret = SEND_ADD_EPOLLIN;
@@ -285,7 +285,7 @@ static void do_send(int fd)
 	size_t len;
 
 	//ssl send
-	if(g_config.enable_ssl && !mybuff_getdata(&(curcon->send_buff), &data, &len))
+	if(ssl && !mybuff_getdata(&(curcon->send_buff), &data, &len))
 	{
 		if(curcon->ssl_want_write > 0 && curcon->ssl_want_write != SSL_WRITE)
 		{
@@ -299,7 +299,7 @@ static void do_send(int fd)
 	}
 
 	//common send
-	if(!g_config.enable_ssl && !mybuff_getdata(&(curcon->send_buff), &data, &len)) 
+	if(!ssl && !mybuff_getdata(&(curcon->send_buff), &data, &len)) 
 	{
 		LOG(glogfd, LOG_DEBUG, "fd[%d] get len from data [%d]\n", fd, len);
 		while (1)
@@ -323,7 +323,7 @@ static void do_send(int fd)
 		}
 	}
 	//only common send will send file, ssl send cant
-	if(!g_config.enable_ssl && ret == SEND_ADD_EPOLLIN && !mybuff_getfile(&(curcon->send_buff), &localfd, &start, &len))
+	if(!ssl && ret == SEND_ADD_EPOLLIN && !mybuff_getfile(&(curcon->send_buff), &localfd, &start, &len))
 	{
 		LOG(glogfd, LOG_DEBUG, "fd[%d] get len from file [%d]\n", fd, len);
 		size_t len1 = len > GSIZE ? GSIZE : len;
@@ -408,7 +408,7 @@ static int ssl_do_recv(int fd)
 	return n;
 }
 
-static void do_recv(int fd)
+static void do_recv(int fd, int ssl)
 {
 	struct conn *curcon = &acon[fd];
 	if (curcon->fd < 0)
@@ -420,7 +420,7 @@ static void do_recv(int fd)
 	int n = -1;
 	while (1)
 	{
-		if(g_config.enable_ssl)
+		if(ssl)
 		{
 			if(curcon->ssl_want_read > 0 && curcon->ssl_want_read != SSL_READ)
 			{
@@ -478,7 +478,7 @@ static void do_recv(int fd)
 			do_close(fd);
 			break;
 		case RECV_SEND:
-			do_send(fd);
+			do_send(fd, ssl);
 			break;
 		case RECV_ADD_EPOLLIN:
 			modify_fd_event(fd, EPOLLIN);
@@ -492,23 +492,38 @@ static void do_recv(int fd)
 	}
 }
 
-static void do_process(int fd, int events)
+static void do_recv_udp(int fd)
+{
+}
+
+static void do_send_udp(int fd)
+{
+}
+
+static void do_process(int fd, int events, t_thread_arg *argp)
 {
 	if(!(events & (EPOLLIN | EPOLLOUT))) 
 	{
 		LOG(glogfd, LOG_DEBUG, "error event %d, %d\n", events, fd);
-		do_close(fd);
+		if (argp->protocol == SOCK_STREAM)
+			do_close(fd);
 		return;
 	}
 	if(events & EPOLLIN) 
 	{
 		LOG(glogfd, LOG_DEBUG, "read event %d, %d\n", events, fd);
-		do_recv(fd);
+		if (argp->protocol == SOCK_STREAM)
+			do_recv(fd, argp->ssl);
+		else
+			do_recv_udp(fd);
 	}
 	if(events & EPOLLOUT) 
 	{
 		LOG(glogfd, LOG_DEBUG, "send event %d, %d\n", events, fd);
-		do_send(fd);
+		if (argp->protocol == SOCK_STREAM)
+			do_send(fd, argp->ssl);
+		else
+			do_send_udp(fd);
 	}
 }
 
@@ -599,7 +614,7 @@ int log_signalling_thread(void *arg)
 	}
 	if (argp->port > 0)
 	{
-		lfd = get_listen_sock(argp->port);
+		lfd = get_listen_sock(argp->port, argp->protocol);
 		if (lfd < 0)
 		{
 			LOG(glogfd, LOG_ERROR, "get_listen_sock err %d\n", argp->port);
@@ -642,7 +657,7 @@ int log_signalling_thread(void *arg)
 	if (argp->port > 0)
 		epoll_add(epfd, lfd, event);
 
-	if(g_config.enable_ssl)
+	if(argp->ssl && argp->protocol == SOCK_STREAM)
 	{
 		if(init_ssl(lfd))
 		{
@@ -660,10 +675,10 @@ int log_signalling_thread(void *arg)
 		n = epoll_wait(epfd, pev, maxevent, 1000);
 		for(i = 0; i < n; i++) 
 		{
-			if (argp->port > 0 && pev[i].data.fd == lfd)
+			if (argp->protocol == SOCK_STREAM && argp->port > 0 && pev[i].data.fd == lfd)
 				accept_new();
 			else
-				do_process(pev[i].data.fd, pev[i].events);
+				do_process(pev[i].data.fd, pev[i].events, argp);
 		}
 		thread_reached(thst);
 		now = time(NULL);

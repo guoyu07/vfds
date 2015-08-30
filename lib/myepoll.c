@@ -31,13 +31,13 @@ void epoll_del(int epfd, int fd)
 	epoll_ctl(epfd, EPOLL_CTL_DEL, fd, &ev);	
 }
 
-int get_listen_sock(int port)
+int get_listen_sock(int port, int protocol)
 {
 	struct sockaddr_in addr;
 	addr.sin_family = AF_INET;
 	addr.sin_port = htons(port);
 	addr.sin_addr.s_addr = htonl(INADDR_ANY);
-	int fd = socket(AF_INET, SOCK_STREAM, 0);
+	int fd = socket(AF_INET, protocol, 0);
 	if(fd < 0) {
 		printf("socket(AF_INET, SOCK_STREAM, 0): %m\n");
 		return -1;
@@ -53,9 +53,12 @@ int get_listen_sock(int port)
 		return -1;
 	}
 
-	if(listen(fd, myconfig_get_intval("listen_queue_backlog", 10000)) < 0) {
-		printf("bind(%d): %m\n", port);
-		return -1;
+	if (protocol == SOCK_STREAM)
+	{
+		if(listen(fd, myconfig_get_intval("listen_queue_backlog", 10000)) < 0) {
+			printf("bind(%d): %m\n", port);
+			return -1;
+		}
 	}
 
 	fcntl(fd, F_SETFL, fcntl(fd, F_GETFL) | O_NONBLOCK);

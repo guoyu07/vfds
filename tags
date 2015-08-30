@@ -86,7 +86,7 @@ F3	lib/md5.c	155;"	d	file:
 F4	lib/md5.c	156;"	d	file:
 FILE_NOT_EXIST	lib/CSmtp.h	/^		FILE_NOT_EXIST,$/;"	e	enum:ECSmtp::CSmtpError
 FUNC	lib/common.h	19;"	d
-FUNC	src/global.h	16;"	d
+FUNC	src/global.h	20;"	d
 FormatHeader	lib/CSmtp.cpp	/^void CSmtp::FormatHeader(char* header)$/;"	f	class:CSmtp
 GETLOGLEVEL	lib/log.c	39;"	d	file:
 GET_TASK_ERR	src/task.h	/^enum {GET_TASK_ERR = -1, GET_TASK_OK, GET_TASK_NOTHING};$/;"	e	enum:__anon9
@@ -113,7 +113,7 @@ HB_SEND	echo/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_R
 HB_SEND	https/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
 ICALL	src/main.c	86;"	d	file:
 ID	lib/common.h	18;"	d
-ID	src/global.h	14;"	d
+ID	src/global.h	18;"	d
 IDLE	echo/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
 IDLE	https/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
 INIT_LIST_HEAD	lib/list.h	24;"	d
@@ -123,7 +123,7 @@ LIBNAME	lib/makefile	/^LIBNAME=libtools$/;"	m
 LIST_HEAD	lib/list.h	21;"	d
 LIST_HEAD_INIT	lib/list.h	19;"	d
 LN	lib/common.h	20;"	d
-LN	src/global.h	15;"	d
+LN	src/global.h	19;"	d
 LOCK	src/atomic.h	12;"	d
 LOCK	src/atomic.h	14;"	d
 LOG	lib/log.c	/^void LOG(int fd, int level, const char* fmt, ...) $/;"	f
@@ -188,18 +188,18 @@ OUT_OF_MSG_RANGE	lib/CSmtp.h	/^		OUT_OF_MSG_RANGE$/;"	e	enum:ECSmtp::CSmtpError
 PR_SET_NAME	lib/log.c	236;"	d	file:
 READ_STATUS	lib/util_http.c	25;"	d	file:
 RECVBUF_IS_EMPTY	lib/CSmtp.h	/^		RECVBUF_IS_EMPTY,$/;"	e	enum:ECSmtp::CSmtpError
-RECV_ADD_EPOLLALL	src/global.h	40;"	d
-RECV_ADD_EPOLLIN	src/global.h	38;"	d
-RECV_ADD_EPOLLOUT	src/global.h	39;"	d
-RECV_CLOSE	src/global.h	37;"	d
+RECV_ADD_EPOLLALL	src/global.h	44;"	d
+RECV_ADD_EPOLLIN	src/global.h	42;"	d
+RECV_ADD_EPOLLOUT	src/global.h	43;"	d
+RECV_CLOSE	src/global.h	41;"	d
 RECV_LAST	echo/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
 RECV_LAST	https/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
-RECV_SEND	src/global.h	41;"	d
-RET_CLOSE_DUP	src/global.h	52;"	d
-RET_CLOSE_HB	src/global.h	50;"	d
-RET_CLOSE_MALLOC	src/global.h	51;"	d
-RET_OK	src/global.h	48;"	d
-RET_SUCCESS	src/global.h	49;"	d
+RECV_SEND	src/global.h	45;"	d
+RET_CLOSE_DUP	src/global.h	56;"	d
+RET_CLOSE_HB	src/global.h	54;"	d
+RET_CLOSE_MALLOC	src/global.h	55;"	d
+RET_OK	src/global.h	52;"	d
+RET_SUCCESS	src/global.h	53;"	d
 ReceiveData	lib/CSmtp.cpp	/^void CSmtp::ReceiveData()$/;"	f	class:CSmtp
 Recipient	lib/CSmtp.h	/^	struct Recipient$/;"	s	class:CSmtp
 Recipients	lib/CSmtp.h	/^	std::vector<Recipient> Recipients;$/;"	m	class:CSmtp
@@ -207,10 +207,10 @@ RecvBuf	lib/CSmtp.h	/^	char *RecvBuf;$/;"	m	class:CSmtp
 SELECT_TIMEOUT	lib/CSmtp.h	/^		SELECT_TIMEOUT,$/;"	e	enum:ECSmtp::CSmtpError
 SENDBUFSIZE	https/sig.c	27;"	d	file:
 SENDBUF_IS_EMPTY	lib/CSmtp.h	/^		SENDBUF_IS_EMPTY,$/;"	e	enum:ECSmtp::CSmtpError
-SEND_ADD_EPOLLALL	src/global.h	46;"	d
-SEND_ADD_EPOLLIN	src/global.h	44;"	d
-SEND_ADD_EPOLLOUT	src/global.h	45;"	d
-SEND_CLOSE	src/global.h	43;"	d
+SEND_ADD_EPOLLALL	src/global.h	50;"	d
+SEND_ADD_EPOLLIN	src/global.h	48;"	d
+SEND_ADD_EPOLLOUT	src/global.h	49;"	d
+SEND_CLOSE	src/global.h	47;"	d
 SEND_LAST	echo/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
 SEND_LAST	https/sig.h	/^enum SOCK_STAT {LOGOUT = 0, CONNECTED, LOGIN, HB_SEND, HB_RSP, IDLE, RECV_LAST, SEND_LAST};$/;"	e	enum:SOCK_STAT
 SEP	lib/myconfig.c	37;"	d	file:
@@ -427,7 +427,7 @@ g_timelock_time	src/task.c	/^static int g_timelock_time = 3;$/;"	v	file:
 gen_pidfile	src/main.c	/^static void gen_pidfile() {$/;"	f	file:
 get_client_data	src/so.c	/^int get_client_data(int fd, char **data, size_t *len)$/;"	f
 get_ip_by_domain	lib/common.c	/^int get_ip_by_domain(char *serverip, char *domain)$/;"	f
-get_listen_sock	lib/myepoll.c	/^int get_listen_sock(int port)$/;"	f
+get_listen_sock	lib/myepoll.c	/^int get_listen_sock(int port, int protocol)$/;"	f
 get_my_thread	src/thread.c	/^struct thread *get_my_thread(void) {$/;"	f
 get_progname	src/daemon.c	/^static void get_progname(void) {    $/;"	f	file:
 get_result	https/sig.c	/^static int get_result(char *url, char *buf, int len)$/;"	f	file:
@@ -614,6 +614,7 @@ proc_init	src/solib.h	/^typedef int (*proc_init) (void);$/;"	t
 proc_method	src/solib.h	/^typedef int (*proc_method) (int fd);$/;"	t
 proc_timeout	src/solib.h	/^typedef void (*proc_timeout) (void);$/;"	t
 progname	src/daemon.c	/^static char *progname = NULL;$/;"	v	file:
+protocol	src/so.h	/^	int protocol;$/;"	m	struct:__anon5
 pthread_handle_message	src/epoll_udp.c	/^void* pthread_handle_message(int* sock_fd)$/;"	f
 r5hash	lib/common.c	/^uint32_t r5hash(const char *p) $/;"	f
 receiver	lib/c_mail.h	/^	char *receiver;$/;"	m	struct:__anon15

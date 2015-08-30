@@ -8,7 +8,7 @@
 #include <pthread.h>
 
 /*队列类型*/
-enum {TASK_HOME = 0, COLLECT_TASK, CANCEL_TASK, TASK_UNKNOWN};
+enum {TASK_HOME = 0, TASK_RECV, TASK_MISS, TASK_UNKNOWN};
 
 /*取任务状态*/
 enum {GET_TASK_ERR = -1, GET_TASK_OK, GET_TASK_NOTHING};

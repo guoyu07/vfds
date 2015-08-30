@@ -13,6 +13,7 @@ typedef struct {
 	int maxevent;
 	int threadcount;
 	int protocol;
+	int ssl;
 } t_thread_arg;
 
 volatile extern int stop;		//1-服务器停止，0-服务器运行中
