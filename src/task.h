@@ -8,7 +8,7 @@
 #include <pthread.h>
 
 /*队列类型*/
-enum {TASK_HOME = 0, TASK_RECV, TASK_MISS, TASK_UNKNOWN};
+enum {TASK_HOME = 0, TASK_RECV, TASK_UNKNOWN};
 
 /*取任务状态*/
 enum {GET_TASK_ERR = -1, GET_TASK_OK, GET_TASK_NOTHING};
@@ -17,12 +17,22 @@ enum {GET_TASK_ERR = -1, GET_TASK_OK, GET_TASK_NOTHING};
 enum {TASK_DEL = 0, TASK_HOLD};
 
 
+typedef struct {
+	char fname[16]; //basename=time_t + usrid + songid
+	char buf[512];
+	uint32_t idx;
+	uint32_t total;
+} t_udp_p;
+
+
+
 /*任务队列元素*/
 typedef struct {
 	list_head_t llist;
 	list_head_t hlist;
 	int status; //任务所在队列类型
-	void *user; //用户自定义
+	uint32_t ip;
+	t_udp_p p;
 }log_tasklist;
 
 typedef void (*timeout_task)(log_tasklist *task);

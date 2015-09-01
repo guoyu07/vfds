@@ -1,3 +1,4 @@
+#include "task.h"
 #include "so.h"
 #include "init.h"
 #include "solib.h"
@@ -492,8 +493,22 @@ static void do_recv(int fd, int ssl)
 	}
 }
 
+static void push_msg_to_recv(char *buf, uint32_t ip)
+{
+}
+
 static void do_recv_udp(int fd)
 {
+	struct sockaddr_in client_addr;
+	socklen_t cli_len=sizeof(client_addr);
+	int rlen = recvfrom(fd, iobuf, sizeof(t_udp_p), 0, (struct sockaddr *)&client_addr, &cli_len);
+	if (rlen < sizeof(t_udp_p))
+	{
+		LOG(glogfd, LOG_ERROR, "error udp msg %d\n", fd);
+		return;
+	}
+
+	push_msg_to_recv(iobuf, client_addr.sin_addr.s_addr);
 }
 
 static void do_send_udp(int fd)
